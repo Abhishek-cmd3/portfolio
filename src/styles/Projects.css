@@ -1,0 +1,18 @@
+.projects {
+    padding: 50px 20px;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  

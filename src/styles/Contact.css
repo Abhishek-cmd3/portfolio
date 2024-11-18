@@ -1,0 +1,65 @@
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #3b82f6, #9333ea); 
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffdd57; 
+  margin: 0.5rem auto 0;
+  animation: slideIn 1s ease-in-out;
+}
+
+.contact-details p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0.5rem 0;
+}
+
+.contact-details a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-details a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffdd57;
+}
+
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+}
